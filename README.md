@@ -94,7 +94,7 @@ module Platform
       super(application: settings.application,
             schema_version: settings.schema_version, 
             delivered_metrics: settings.delivered,
-            adapater: MonitoringSDK::MetricPublishAdapters::ToptalWaterDrop,
+            adapter: MonitoringSDK::MetricPublishAdapters::ToptalWaterDrop,
             **params)
     end
   end
