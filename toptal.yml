@@ -1,0 +1,7 @@
+owner:
+  name: Communication Tools
+  url: https://team.toptal.net/users?filters%5BteamId%5D=78
+  channel: '#-comm-tools-core'
+
+technology:
+  - ruby
