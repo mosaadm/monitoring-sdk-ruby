@@ -1,0 +1,20 @@
+require:
+  - rubocop-rspec
+  - rubocop-toptal
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6
+
+Metrics/BlockLength:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - lib/monitoring-sdk-ruby.rb
+
+# Our codebase prefers to use `receive` and the cop should
+# not enforce to use `have_received` by default:
+# https://github.com/rubocop-hq/rubocop-rspec/issues/868
+RSpec/MessageSpies:
+  EnforcedStyle: receive
